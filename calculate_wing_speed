@@ -1,0 +1,15 @@
+def calculate_wing_speed(wingspan, flaps_per_minute):
+    # Преобразуем частоту взмахов в секунду
+    flaps_per_second = flaps_per_minute / 60
+
+    # Рассчитываем скорость взмаха крыла (простая модель, используя размах и частоту взмахов)
+    wing_speed = wingspan * flaps_per_second
+
+    return wing_speed
+
+# Пример использования программы:
+eagle_wingspan = 2.5  # Размах крыльев орла в метрах
+flaps_per_minute = 30  # Частота взмахов крыльев в минуту
+
+eagle_wing_speed = calculate_wing_speed(eagle_wingspan, flaps_per_minute)
+print(f"Скорость взмаха крыла орла с размахом {eagle_wingspan} метров и частотой взмахов {flaps_per_minute} в/мин: {eagle_wing_speed} м/с")
