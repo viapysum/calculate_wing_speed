@@ -7,6 +7,7 @@ def calculate_wing_speed(wingspan, flaps_per_minute):
 
     return wing_speed
 
+
 # Пример использования программы:
 eagle_wingspan = 2.5  # Размах крыльев орла в метрах
 flaps_per_minute = 30  # Частота взмахов крыльев в минуту
